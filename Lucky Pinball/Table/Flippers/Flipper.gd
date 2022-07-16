@@ -1,13 +1,18 @@
 extends RigidBody2D
 
-var thrust = Vector2(0, 250)
-var torque = 20000
+export var up_torque := 200000 
+export var input_key = "ui_right" #: String
 
-var input_key = "ui_right"
+
+
+var thrust = Vector2(0, 250)
 
 func _integrate_forces(state):
+	
+	
 	if Input.is_action_pressed("ui_up"):
 		applied_force = thrust.rotated(rotation)
+		print("ui up")
 	else:
 		applied_force = Vector2()
 	var rotation_dir = 0
@@ -15,4 +20,4 @@ func _integrate_forces(state):
 		rotation_dir += 1
 	if Input.is_action_pressed("ui_left"):
 		rotation_dir -= 1
-	applied_torque = rotation_dir * torque
+	applied_torque = rotation_dir * up_torque
