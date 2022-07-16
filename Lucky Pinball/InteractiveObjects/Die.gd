@@ -1,4 +1,4 @@
-extends KinematicBody2D
+extends RigidBody2D
 
 #First, the variables that are used
 
@@ -10,10 +10,7 @@ var speed :=  200
 
 func _physics_process(delta): #Function that allows the die to move
 	_velocity = calculate_move_velocity(_velocity) # separate function
-	var collision_info = move_and_collide(_velocity * delta)
-	if collision_info: 
-		_velocity = _velocity.bounce(collision_info.normal) #
-		_velocity *= 0.9
+	
 
 func calculate_move_velocity(linear_velocity: Vector2) -> Vector2: #return a vector
 	var out: = linear_velocity  #Linear velocity is a Godot value

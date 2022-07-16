@@ -31,6 +31,12 @@ click={
  ]
 }
 
+[layer_names]
+
+2d_render/layer_1="Die"
+2d_render/layer_2="Flippers"
+2d_render/layer_3="Table"
+
 [rendering]
 
 environment/default_environment="res://default_env.tres"
