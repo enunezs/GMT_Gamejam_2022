@@ -1,6 +1,10 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Table/Screenshot 2022-07-16 111026.png" type="Texture" id=1]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Polygon2D" type="Polygon2D" parent="."]
-polygon = PoolVector2Array( 19, 11, 485, 11, 481, 319, 21, 310 )
+[node name="Screenshot2022-07-16111026" type="Sprite" parent="."]
+position = Vector2( 529, 356 )
+scale = Vector2( 0.853167, 0.853167 )
+texture = ExtResource( 1 )
