@@ -5,6 +5,7 @@ extends RigidBody2D
 var _velocity := Vector2(0,0) # The velocity vector
 export var gravity := 3000 # Gravity value
 var speed :=  200
+const bumper_speed := - 1.5
 
 #delta is the amount of time elapsed during one frame
 
@@ -18,3 +19,5 @@ func calculate_move_velocity(linear_velocity: Vector2) -> Vector2: #return a vec
 	return out 
 
 #It's kind of confusing, might need to rework this part to make it clearer
+
+

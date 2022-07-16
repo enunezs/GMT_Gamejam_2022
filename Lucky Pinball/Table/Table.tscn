@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Table/Screenshot 2022-07-16 111026.png" type="Texture" id=1]
 [ext_resource path="res://InteractiveObjects/Die.tscn" type="PackedScene" id=2]
+[ext_resource path="res://InteractiveObjects/Bumper.tscn" type="PackedScene" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 249.353, 13.4696 )
@@ -18,36 +19,41 @@ scale = Vector2( 0.853167, 0.853167 )
 texture = ExtResource( 1 )
 
 [node name="Die" parent="." instance=ExtResource( 2 )]
-position = Vector2( 628.969, 467.403 )
+position = Vector2( 620.479, 467.403 )
 scale = Vector2( 0.853167, 0.853167 )
 
-[node name="Node2D" type="Node2D" parent="."]
+[node name="Collisions" type="Node2D" parent="."]
 
-[node name="Area2D" type="StaticBody2D" parent="Node2D"]
+[node name="Area2D" type="StaticBody2D" parent="Collisions"]
 collision_layer = 4
 collision_mask = 4
 
-[node name="FlipperWallRight" type="CollisionPolygon2D" parent="Node2D/Area2D"]
+[node name="FlipperWallRight" type="CollisionPolygon2D" parent="Collisions/Area2D"]
 modulate = Color( 1, 0, 0, 1 )
 polygon = PoolVector2Array( 660.292, 532.221, 665.451, 537.777, 666.642, 606.035, 583.7, 650.086, 572.588, 636.593, 646.799, 601.67, 659.102, 582.224 )
 
-[node name="FlipperWallLeft" type="CollisionPolygon2D" parent="Node2D/Area2D"]
+[node name="FlipperWallLeft" type="CollisionPolygon2D" parent="Collisions/Area2D"]
 position = Vector2( 1029.26, 0 )
 scale = Vector2( -1, 1 )
 polygon = PoolVector2Array( 660.292, 532.221, 665.451, 537.777, 666.642, 606.035, 583.7, 650.086, 572.588, 636.593, 646.799, 601.67, 659.102, 582.224 )
 
-[node name="UpperBorder" type="CollisionShape2D" parent="Node2D/Area2D"]
+[node name="UpperBorder" type="CollisionShape2D" parent="Collisions/Area2D"]
 position = Vector2( 527.984, -16.2247 )
 shape = SubResource( 1 )
 
-[node name="LowerBorder" type="CollisionShape2D" parent="Node2D/Area2D"]
+[node name="LowerBorder" type="CollisionShape2D" parent="Collisions/Area2D"]
 position = Vector2( 527.984, 729.341 )
 shape = SubResource( 1 )
 
-[node name="RightBorder" type="CollisionShape2D" parent="Node2D/Area2D"]
+[node name="RightBorder" type="CollisionShape2D" parent="Collisions/Area2D"]
 position = Vector2( 771.069, 354.968 )
 shape = SubResource( 2 )
 
-[node name="LeftBorder" type="CollisionShape2D" parent="Node2D/Area2D"]
+[node name="LeftBorder" type="CollisionShape2D" parent="Collisions/Area2D"]
 position = Vector2( 286.782, 354.968 )
 shape = SubResource( 2 )
+
+[node name="Bumper" parent="Collisions" instance=ExtResource( 3 )]
+position = Vector2( 628.993, 557.122 )
+scale = Vector2( 0.853167, 0.853167 )
+collision_layer = 2
