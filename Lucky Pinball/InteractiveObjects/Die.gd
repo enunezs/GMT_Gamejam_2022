@@ -9,6 +9,8 @@ const bumper_speed := - 1.5
 
 #delta is the amount of time elapsed during one frame
 
+"""
+
 func _physics_process(delta): #Function that allows the die to move
 	_velocity = calculate_move_velocity(_velocity) # separate function
 	
@@ -20,4 +22,4 @@ func calculate_move_velocity(linear_velocity: Vector2) -> Vector2: #return a vec
 
 #It's kind of confusing, might need to rework this part to make it clearer
 
-
+"""

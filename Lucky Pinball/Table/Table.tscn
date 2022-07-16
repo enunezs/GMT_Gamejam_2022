@@ -19,7 +19,7 @@ scale = Vector2( 0.853167, 0.853167 )
 texture = ExtResource( 1 )
 
 [node name="Die" parent="." instance=ExtResource( 2 )]
-position = Vector2( 620.479, 467.403 )
+position = Vector2( 517, 342 )
 scale = Vector2( 0.853167, 0.853167 )
 
 [node name="Collisions" type="Node2D" parent="."]
@@ -54,6 +54,16 @@ position = Vector2( 286.782, 354.968 )
 shape = SubResource( 2 )
 
 [node name="Bumper" parent="Collisions" instance=ExtResource( 3 )]
-position = Vector2( 628.993, 557.122 )
+position = Vector2( 462, 461 )
+scale = Vector2( 0.853167, 0.853167 )
+collision_layer = 2
+
+[node name="Bumper2" parent="Collisions" instance=ExtResource( 3 )]
+position = Vector2( 527, 410 )
+scale = Vector2( 0.853167, 0.853167 )
+collision_layer = 2
+
+[node name="Bumper3" parent="Collisions" instance=ExtResource( 3 )]
+position = Vector2( 581, 485 )
 scale = Vector2( 0.853167, 0.853167 )
 collision_layer = 2
