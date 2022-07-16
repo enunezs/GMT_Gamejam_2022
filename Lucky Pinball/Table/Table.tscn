@@ -4,7 +4,7 @@
 
 [node name="Node2D" type="Node2D"]
 
-[node name="Screenshot2022-07-16111026" type="Sprite" parent="."]
+[node name="Background" type="Sprite" parent="."]
 position = Vector2( 529, 356 )
 scale = Vector2( 0.853167, 0.853167 )
 texture = ExtResource( 1 )
