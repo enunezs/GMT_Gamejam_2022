@@ -7,6 +7,7 @@ extends StaticBody2D
 enum MODE { radial,linear }
 export(MODE) var bounce_mode = MODE.linear
 export var bumper_force = 100
+var slingshot_vector = Vector2(0.7, -0.5).normalized()
 #bounce_mode = "linear"
 
 # Called when the node enters the scene tree for the first time.
@@ -38,5 +39,17 @@ func _on_Area2D_body_entered(body): #body is a node
 		#apply_impulse()# = Vector2(0, 250)
 		#body.add_force ()
 	
+	if bounce_mode == MODE.linear:
+		
+		print(body.name)
+		#print(body.angular_damp)
+		if body.name == "Die":
+			var pos_diff = (slingshot_vector).normalized()*bumper_force
+			body.apply_impulse(Vector2(0, 0),pos_diff)
+		
+		print(body.get_node_and_resource(":position"))
+		
+		#apply_impulse()# = Vector2(0, 250)
+		#body.add_force ()
 	
 	pass # Replace with function body.

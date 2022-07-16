@@ -16,6 +16,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Lucky Pinball"
+run/main_scene="res://Table/Table.tscn"
 config/icon="res://icon.png"
 
 [display]
