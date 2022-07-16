@@ -9,5 +9,12 @@
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 
+[node name="FlipperL" parent="." instance=ExtResource( 2 )]
+position = Vector2( 471, 644 )
+scale = Vector2( -1, 1 )
+up_torque = -200000
+input_key = "ui_left"
+
 [node name="FlipperR" parent="." instance=ExtResource( 2 )]
-position = Vector2( 541, 655 )
+position = Vector2( 557, 644 )
+input_key = "ui_right"

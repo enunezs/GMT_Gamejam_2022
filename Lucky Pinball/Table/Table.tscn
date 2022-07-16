@@ -25,7 +25,7 @@ scale = Vector2( 0.853167, 0.853167 )
 
 [node name="Area2D" type="StaticBody2D" parent="Node2D"]
 collision_layer = 4
-collision_mask = 5
+collision_mask = 4
 
 [node name="FlipperWallRight" type="CollisionPolygon2D" parent="Node2D/Area2D"]
 modulate = Color( 1, 0, 0, 1 )
