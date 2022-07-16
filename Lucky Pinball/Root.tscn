@@ -5,9 +5,9 @@
 
 [node name="Root" type="Node2D"]
 
-[node name="Node2D" parent="." instance=ExtResource( 1 )]
+[node name="Table" parent="." instance=ExtResource( 1 )]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 
 [node name="FlipperR" parent="." instance=ExtResource( 2 )]
-position = Vector2( 555, 645 )
+position = Vector2( 541, 655 )
