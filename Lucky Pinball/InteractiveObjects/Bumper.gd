@@ -7,6 +7,7 @@ extends StaticBody2D
 enum MODE { radial,linear }
 export(MODE) var bounce_mode = MODE.linear
 export var bumper_force = 100
+export var score_change = 0
 #bounce_mode = "linear"
 
 # Called when the node enters the scene tree for the first time.
@@ -30,10 +31,16 @@ func _on_Area2D_body_entered(body): #body is a node
 		print(body.name)
 		#print(body.angular_damp)
 		if body.name == "Die":
+			# Calculate force direction
 			var pos_diff = (global_position - body.global_position).normalized()*bumper_force
+			#Apply new force
 			body.apply_impulse(Vector2(0, 0),pos_diff)
+			#Inform player of score change
+			body.add_score(score_change)
 		
 		print(body.get_node_and_resource(":position"))
+		
+		
 		
 		#apply_impulse()# = Vector2(0, 250)
 		#body.add_force ()
