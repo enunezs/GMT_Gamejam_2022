@@ -1,15 +1,20 @@
 extends RigidBody2D
 
-var set_up = true 
-var direction = 0 
-var move_speed = 80
+#First, the variables that are used
 
+var _velocity := Vector2(0,0) # The velocity vector
+export var gravity := 3000 # Gravity value
+var speed :=  200
 
-# Called when the node enters the scene tree for the first time.
-func _physics_process(delta):
-	linear_velocity = Vector2(move_speed * direction, 0) #Vector x and y
-	# Y velocity vector is already an editable parameter of Godot
-	if Input.is_action_just_pressed("click"):
-		gravity_scale = 2.0
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+#delta is the amount of time elapsed during one frame
 
+func _physics_process(delta): #Function that allows the die to move
+	_velocity = calculate_move_velocity(_velocity) # separate function
+	
+
+func calculate_move_velocity(linear_velocity: Vector2) -> Vector2: #return a vector
+	var out: = linear_velocity  #Linear velocity is a Godot value
+	out.y += gravity * get_physics_process_delta_time() 
+	return out 
+
+#It's kind of confusing, might need to rework this part to make it clearer
