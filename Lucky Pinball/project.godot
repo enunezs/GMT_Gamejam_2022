@@ -10,12 +10,13 @@ config_version=4
 
 _global_script_classes=[  ]
 _global_script_class_icons={
+
 }
 
 [application]
 
 config/name="Lucky Pinball"
-run/main_scene="res://Root.tscn"
+run/main_scene="res://Table/Table.tscn"
 config/icon="res://icon.png"
 
 [display]
@@ -23,16 +24,8 @@ config/icon="res://icon.png"
 window/size/width=1280
 window/size/height=720
 window/dpi/allow_hidpi=true
-window/per_pixel_transparency/allowed=true
-window/per_pixel_transparency/enabled=true
 window/stretch/mode="2d"
 window/stretch/aspect="keep"
-
-[global]
-
-resol=false
-resolu=false
-layer=false
 
 [input]
 
@@ -47,7 +40,6 @@ click={
 2d_render/layer_1="Die"
 2d_render/layer_2="Flippers"
 2d_render/layer_3="Table"
-2d_physics/layer_10="FlipperLimits"
 
 [rendering]
 
