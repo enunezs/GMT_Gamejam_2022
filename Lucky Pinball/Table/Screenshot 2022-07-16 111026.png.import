@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/die1.png-be39ac60d0d10972100e7c275ebc75fc.stex"
+path="res://.import/Screenshot 2022-07-16 111026.png-4aa984e97eaee788e3f6c098bf4545a5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/TemporaryAssets/Dice/die1.png"
-dest_files=[ "res://.import/die1.png-be39ac60d0d10972100e7c275ebc75fc.stex" ]
+source_file="res://Table/Screenshot 2022-07-16 111026.png"
+dest_files=[ "res://.import/Screenshot 2022-07-16 111026.png-4aa984e97eaee788e3f6c098bf4545a5.stex" ]
 
 [params]
 
