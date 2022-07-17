@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://InteractiveObjects/Bumpers/Bumper.gd" type="Script" id=1]
 [ext_resource path="res://InteractiveObjects/Slingshots/RightSlingshot.png" type="Texture" id=2]
+[ext_resource path="res://Audio/Bumper.wav" type="AudioStream" id=3]
 
 [sub_resource type="PhysicsMaterial" id=1]
 friction = 0.13
@@ -74,5 +75,8 @@ shape = SubResource( 6 )
 position = Vector2( -4.76837e-07, 20 )
 rotation = 0.907571
 shape = SubResource( 7 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 3 )
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

@@ -10,6 +10,7 @@ export var bumper_force = 100
 export var score_change = 0
 export var sprite_change = false
 export var animate = true
+export var sound = false
 #bounce_mode = "linear"
 
 # Called when the node enters the scene tree for the first time.
@@ -25,7 +26,8 @@ func _ready():
 func _on_Area2D_body_entered(body): #body is a node
 	if animate:
 		$AnimationPlayer.play("Bump")
-	
+	if sound:
+		$AudioStreamPlayer2D.play()	
 	if body == null:
 		return
 	
