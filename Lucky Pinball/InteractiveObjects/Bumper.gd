@@ -8,6 +8,8 @@ enum MODE { radial,linear }
 export(MODE) var bounce_mode = MODE.linear
 export var bumper_force = 100
 export var score_change = 0
+export var sprite_change = false
+export var animate = true
 #bounce_mode = "linear"
 
 # Called when the node enters the scene tree for the first time.
@@ -21,7 +23,8 @@ func _ready():
 
 
 func _on_Area2D_body_entered(body): #body is a node
-	$AnimationPlayer.play("Bump")
+	if animate:
+		$AnimationPlayer.play("Bump")
 	
 	if body == null:
 		return
@@ -38,8 +41,6 @@ func _on_Area2D_body_entered(body): #body is a node
 		#Inform player of score change
 		body.add_score(score_change)
 	
-		print(body.get_node_and_resource(":position"))
-		
 		
 		
 		#apply_impulse()# = Vector2(0, 250)
