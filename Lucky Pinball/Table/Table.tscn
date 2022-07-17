@@ -1,14 +1,15 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Background/IMG_20220716_205458.jpg" type="Texture" id=1]
 [ext_resource path="res://InteractiveObjects/Pinwheel.tscn" type="PackedScene" id=2]
-[ext_resource path="res://InteractiveObjects/Bumper.tscn" type="PackedScene" id=3]
+[ext_resource path="res://InteractiveObjects/Bumpers/RedBumper.tscn" type="PackedScene" id=3]
 [ext_resource path="res://InteractiveObjects/Slingshots/SlingshotRight.tscn" type="PackedScene" id=4]
 [ext_resource path="res://InteractiveObjects/Slingshots/SlingshotLeft.tscn" type="PackedScene" id=5]
 [ext_resource path="res://InteractiveObjects/LightUps/LightUp.tscn" type="PackedScene" id=6]
-[ext_resource path="res://InteractiveObjects/RedPachinkoDots.tscn" type="PackedScene" id=7]
-[ext_resource path="res://InteractiveObjects/BluePachinkoDots.tscn" type="PackedScene" id=8]
+[ext_resource path="res://InteractiveObjects/Bumpers/RedPachinkoDots.tscn" type="PackedScene" id=7]
+[ext_resource path="res://InteractiveObjects/Bumpers/BluePachinkoDots.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Table/ExtraDiceLights.gd" type="Script" id=9]
+[ext_resource path="res://InteractiveObjects/Bumpers/BlueBumper.tscn" type="PackedScene" id=10]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 249.353, 13.4696 )
@@ -79,15 +80,15 @@ position = Vector2( 66, 29 )
 polygon = PoolVector2Array( 522, -26, 575, -17, 630, 0, 663, 18, 681, 55, 695, 121, 704, -40, 484, -38 )
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Collisions/Edges"]
-polygon = PoolVector2Array( 476, 121, 467, 79, 466, 47, 478, 18, 499, 1, 537, -4, 440, -10 )
+polygon = PoolVector2Array( 466, 47, 478, 18, 499, 1, 537, -4, 440, -10 )
 
 [node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Collisions/Edges"]
 position = Vector2( -110, 19 )
-polygon = PoolVector2Array( 499, 277, 476, 225, 458, 168, 450, 109, 452, 57, 479, 20, 519, 7, 551, 14, 567, 35, 578, 74, 549, -29, 404, -36, 416, 256, 465, 298, 488, 298, 501, 300 )
+polygon = PoolVector2Array( 499, 277, 476, 225, 458, 168, 450, 109, 452, 57, 479, 20, 519, 7, 551, 14, 576, 28, 549, -29, 404, -36, 416, 256, 465, 298, 488, 298, 501, 300 )
 
 [node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="Collisions/Edges"]
 position = Vector2( -115, 19 )
-polygon = PoolVector2Array( 750, 44, 786, 56, 814, 81, 826, 115, 831, 156, 831, 156, 816, 200, 799, 229, 767, 288, 746, 317, 791, 290, 806, 296, 822, 307, 814, 331, 794, 361, 812, 390, 821, 433, 823, 374, 827, 281, 834, 196, 832, 114, 819, 77, 786, 51 )
+polygon = PoolVector2Array( 814, 81, 826, 115, 816, 200, 799, 229, 767, 288, 746, 317, 791, 290, 806, 296, 822, 307, 814, 331, 794, 361, 812, 390, 821, 433, 823, 374, 827, 281, 832, 114, 819, 77 )
 
 [node name="Pinwheel" parent="." instance=ExtResource( 2 )]
 position = Vector2( 407, 106 )
@@ -118,30 +119,6 @@ position = Vector2( -84, -74.204 )
 
 [node name="Bumpers" type="Node2D" parent="."]
 
-[node name="Bumper2" parent="Bumpers" instance=ExtResource( 3 )]
-position = Vector2( 421, 243 )
-scale = Vector2( 0.853167, 0.853167 )
-collision_layer = 2
-score_change = 1
-
-[node name="Bumper6" parent="Bumpers" instance=ExtResource( 3 )]
-position = Vector2( 445, 183 )
-scale = Vector2( 0.853167, 0.853167 )
-collision_layer = 2
-score_change = 1
-
-[node name="Bumper8" parent="Bumpers" instance=ExtResource( 3 )]
-position = Vector2( 377, 341 )
-scale = Vector2( 0.853167, 0.853167 )
-collision_layer = 2
-score_change = -1
-
-[node name="Bumper9" parent="Bumpers" instance=ExtResource( 3 )]
-position = Vector2( 652, 149 )
-scale = Vector2( 0.853167, 0.853167 )
-collision_layer = 2
-score_change = -1
-
 [node name="LightsUpManager" type="Node2D" parent="."]
 position = Vector2( -14, 50 )
 script = ExtResource( 9 )
@@ -160,3 +137,9 @@ position = Vector2( 453, 12 )
 
 [node name="Node2D5" parent="LightsUpManager" instance=ExtResource( 6 )]
 position = Vector2( 461, 59 )
+
+[node name="Bumper" parent="." instance=ExtResource( 3 )]
+position = Vector2( 655, 147 )
+
+[node name="Bumper2" parent="." instance=ExtResource( 10 )]
+position = Vector2( 437, 218 )

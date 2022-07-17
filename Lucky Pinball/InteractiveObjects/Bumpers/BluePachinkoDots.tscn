@@ -1,7 +1,7 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://InteractiveObjects/Bumper.gd" type="Script" id=1]
-[ext_resource path="res://Assets/TrueAssetsInator/Bumpers/red_dot.png" type="Texture" id=2]
+[ext_resource path="res://Assets/TrueAssetsInator/Bumpers/blue_dot2.png" type="Texture" id=1]
+[ext_resource path="res://InteractiveObjects/Bumpers/Bumper.gd" type="Script" id=2]
 
 [sub_resource type="PhysicsMaterial" id=1]
 friction = 0.13
@@ -14,27 +14,17 @@ radius = 22.0
 resource_name = "Bump"
 length = 0.3
 step = 0.05
-tracks/0/type = "value"
-tracks/0/path = NodePath("../Bumper2/Bumper:scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0, 0.05, 0.1 ),
-"transitions": PoolRealArray( 1, 1, 1 ),
-"update": 0,
-"values": [ Vector2( 0.3, 0.3 ), Vector2( 0.5, 0.5 ), Vector2( 0.3, 0.3 ) ]
-}
 
 [sub_resource type="CircleShape2D" id=4]
 radius = 49.9921
 
 [node name="Bumper" type="StaticBody2D"]
 physics_material_override = SubResource( 1 )
-script = ExtResource( 1 )
+script = ExtResource( 2 )
 bounce_mode = 0
-score_change = 1
+bumper_force = 10
+score_change = -1
+animate = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2( 0.5, 0.5 )
@@ -56,5 +46,6 @@ shape = SubResource( 4 )
 [node name="Bumper" type="Sprite" parent="."]
 position = Vector2( -0.0129204, 0.111279 )
 scale = Vector2( 0.15, 0.15 )
-texture = ExtResource( 2 )
+texture = ExtResource( 1 )
+
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

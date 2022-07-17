@@ -1,8 +1,9 @@
 [gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://InteractiveObjects/Bumper.gd" type="Script" id=1]
+[ext_resource path="res://InteractiveObjects/Bumpers/Bumper.gd" type="Script" id=1]
 [ext_resource path="res://Assets/TrueAssetsInator/Bumpers/blue_off.png" type="Texture" id=2]
 [ext_resource path="res://Assets/TrueAssetsInator/Bumpers/blue_on.png" type="Texture" id=3]
+
 
 [sub_resource type="PhysicsMaterial" id=1]
 friction = 0.13
