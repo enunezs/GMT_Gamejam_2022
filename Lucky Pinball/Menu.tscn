@@ -1,18 +1,17 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Menu.gd" type="Script" id=1]
 [ext_resource path="res://Background/Dice & Bite.png" type="Texture" id=2]
-[ext_resource path="res://Assets/Fonts/Limelight/Limelight-Regular.ttf" type="DynamicFontData" id=3]
-[ext_resource path="res://new_theme.tres" type="Theme" id=4]
 
-[sub_resource type="DynamicFont" id=1]
-size = 32
-font_data = ExtResource( 3 )
+[sub_resource type="Theme" id=1]
 
 [node name="Menu" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 639.875, 357.432 )
@@ -23,32 +22,30 @@ texture = ExtResource( 2 )
 anchor_top = 1.0
 anchor_bottom = 1.0
 margin_left = 50.0
-margin_top = -180.0
-margin_right = 353.0
+margin_top = -100.0
+margin_right = 57.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="StartButton" type="Button" parent="VBoxContainer"]
-margin_right = 303.0
-margin_bottom = 46.0
+margin_right = 57.0
+margin_bottom = 20.0
 focus_neighbour_top = NodePath("../Quitbutton")
-theme = ExtResource( 4 )
-custom_fonts/font = SubResource( 1 )
+theme = SubResource( 1 )
 text = "Start"
 
 [node name="OptionsButton" type="Button" parent="VBoxContainer"]
-visible = false
-margin_top = 50.0
-margin_right = 303.0
-margin_bottom = 96.0
-theme = ExtResource( 4 )
+margin_top = 24.0
+margin_right = 57.0
+margin_bottom = 44.0
 text = "Credits"
 
 [node name="Quitbutton" type="Button" parent="VBoxContainer"]
-margin_top = 50.0
-margin_right = 303.0
-margin_bottom = 96.0
+margin_top = 48.0
+margin_right = 57.0
+margin_bottom = 68.0
 focus_neighbour_bottom = NodePath("../StartButton")
-theme = ExtResource( 4 )
 text = "Quit"
-
 [connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_StartButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/Quitbutton" to="." method="_on_Quitbutton_pressed"]
