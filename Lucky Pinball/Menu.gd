@@ -7,7 +7,7 @@ func _ready():
 
 
 func _on_StartButton_pressed():
-	get_tree().change_scene("res://Root.tscn")
+	get_tree().change_scene("res://Game.tscn")
 
 
 func _on_Quitbutton_pressed():

@@ -79,6 +79,7 @@ func game_over():
 	else:
 		#lost()	
 		print("Boooh! Game lost")
+		get_tree().change_scene("res://Menu.tscn")
 		pass
 	
 	# If won, spawn new dice and mission

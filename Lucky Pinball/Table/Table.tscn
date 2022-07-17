@@ -1,7 +1,6 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Table/BackgroundBase2.png" type="Texture" id=1]
-[ext_resource path="res://InteractiveObjects/Pinwheel.tscn" type="PackedScene" id=2]
 [ext_resource path="res://InteractiveObjects/Bumpers/RedBumper.tscn" type="PackedScene" id=3]
 [ext_resource path="res://InteractiveObjects/Slingshots/SlingshotRight.tscn" type="PackedScene" id=4]
 [ext_resource path="res://InteractiveObjects/Slingshots/SlingshotLeft.tscn" type="PackedScene" id=5]
@@ -80,16 +79,16 @@ polygon = PoolVector2Array( 345.115, 428.427, 361.1, 429.605, 367.707, 433.381, 
 [node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="Collisions/Edges"]
 polygon = PoolVector2Array( 716, 718, 746, 719, 745.331, 162.307, 743.212, 138.998, 729.439, 112.512, 723.082, 93.4415, 709.309, 77.5496, 693.417, 69.0739, 682.823, 62.7171, 680.704, 66.9549, 680.704, 74.3712, 695.536, 81.7874, 701.893, 91.3226, 710.369, 105.096, 719.904, 120.988, 728.38, 147.474, 730.499, 170.782, 728.38, 187.734, 664.812, 338.177, 669.05, 343.475, 675.406, 342.415, 690.239, 314.869, 699.774, 310.631, 714.607, 309.572, 723.082, 314.869, 730.499, 324.404, 736.855, 336.059, 736.855, 350.891, 729.439, 363.605, 722.023, 372.08, 711.428, 392.21, 699.774, 429.291 )
 
-[node name="Pinwheel" parent="." instance=ExtResource( 2 )]
-position = Vector2( 398.582, 94.7754 )
-scale = Vector2( 0.85, 0.85 )
-
 [node name="SlingshotR" parent="." instance=ExtResource( 4 )]
-position = Vector2( 602.892, 516 )
+position = Vector2( 613, 516 )
 scale = Vector2( 1.3, 1.3 )
 
 [node name="SlingshotL" parent="." instance=ExtResource( 5 )]
-position = Vector2( 454.809, 516 )
+position = Vector2( 444, 516 )
+scale = Vector2( 1.3, 1.3 )
+
+[node name="SlingshotL2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 444, 516 )
 scale = Vector2( 1.3, 1.3 )
 
 [node name="Pins" type="Node2D" parent="."]
