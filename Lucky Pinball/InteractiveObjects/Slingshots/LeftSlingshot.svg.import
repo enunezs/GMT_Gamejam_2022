@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/BasicDice.svg-8e2007590b968ff155a2ea5d14ca08f4.stex"
+path="res://.import/LeftSlingshot.svg-3366be4b8cd759183bc27ece16d62511.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://InteractiveObjects/Dice/BasicDice.svg"
-dest_files=[ "res://.import/BasicDice.svg-8e2007590b968ff155a2ea5d14ca08f4.stex" ]
+source_file="res://InteractiveObjects/Slingshots/LeftSlingshot.svg"
+dest_files=[ "res://.import/LeftSlingshot.svg-3366be4b8cd759183bc27ece16d62511.stex" ]
 
 [params]
 

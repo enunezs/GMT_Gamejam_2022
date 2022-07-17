@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/BasicDice.svg-8e2007590b968ff155a2ea5d14ca08f4.stex"
+path="res://.import/Dice.svg-eba34c2e1d915fbc512dd989a7c530ed.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://InteractiveObjects/Dice/BasicDice.svg"
-dest_files=[ "res://.import/BasicDice.svg-8e2007590b968ff155a2ea5d14ca08f4.stex" ]
+source_file="res://InteractiveObjects/Dice/TrueAssetsInator/Dice.svg"
+dest_files=[ "res://.import/Dice.svg-eba34c2e1d915fbc512dd989a7c530ed.stex" ]
 
 [params]
 

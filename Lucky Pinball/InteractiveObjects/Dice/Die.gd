@@ -21,7 +21,10 @@ func add_score(_score):
 	update_sprite()
 	
 	#TODO: Play respective animation
-
+	
+func get_score():
+	return score
+	
 func update_sprite():
 	
 	$AnimatedSprite.frame = score
