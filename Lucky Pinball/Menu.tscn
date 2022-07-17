@@ -1,21 +1,29 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Menu.gd" type="Script" id=1]
+[ext_resource path="res://Background/Dice & Bite.png" type="Texture" id=2]
+
+[sub_resource type="Theme" id=1]
 
 [node name="Menu" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 639.875, 357.432 )
+scale = Vector2( 0.666797, 0.661911 )
+texture = ExtResource( 2 )
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -20.0
-margin_top = -34.0
-margin_right = 20.0
-margin_bottom = 34.0
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 50.0
+margin_top = -100.0
+margin_right = 57.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -24,6 +32,7 @@ __meta__ = {
 margin_right = 57.0
 margin_bottom = 20.0
 focus_neighbour_top = NodePath("../Quitbutton")
+theme = SubResource( 1 )
 text = "Start"
 
 [node name="OptionsButton" type="Button" parent="VBoxContainer"]
@@ -38,6 +47,5 @@ margin_right = 57.0
 margin_bottom = 68.0
 focus_neighbour_bottom = NodePath("../StartButton")
 text = "Quit"
-
 [connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_StartButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/Quitbutton" to="." method="_on_Quitbutton_pressed"]
