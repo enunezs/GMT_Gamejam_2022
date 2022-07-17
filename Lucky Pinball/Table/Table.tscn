@@ -5,8 +5,8 @@
 [ext_resource path="res://InteractiveObjects/Bumper.tscn" type="PackedScene" id=3]
 [ext_resource path="res://InteractiveObjects/Slingshots/SlingshotRight.tscn" type="PackedScene" id=4]
 [ext_resource path="res://InteractiveObjects/Slingshots/SlingshotLeft.tscn" type="PackedScene" id=5]
-[ext_resource path="res://InteractiveObjects/LightUps/LightUp.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Table/ExtraDiceLights.gd" type="Script" id=7]
+[ext_resource path="res://InteractiveObjects/BluePachinkoDots.tscn" type="PackedScene" id=6]
+[ext_resource path="res://InteractiveObjects/RedPachinkoDots.tscn" type="PackedScene" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 249.353, 13.4696 )
@@ -62,7 +62,6 @@ position = Vector2( 286.782, 354.968 )
 shape = SubResource( 2 )
 
 [node name="Border2" type="StaticBody2D" parent="Collisions"]
-position = Vector2( -17, 10 )
 collision_layer = 4
 collision_mask = 4
 physics_material_override = SubResource( 4 )
@@ -72,19 +71,19 @@ position = Vector2( 527.984, 729.341 )
 shape = SubResource( 1 )
 
 [node name="Bumper" parent="Collisions" instance=ExtResource( 3 )]
-position = Vector2( 431, 213 )
+position = Vector2( 421, 243 )
 scale = Vector2( 0.853167, 0.853167 )
 collision_layer = 2
 score_change = 1
 
 [node name="Bumper2" parent="Collisions" instance=ExtResource( 3 )]
-position = Vector2( 374, 357 )
+position = Vector2( 445, 183 )
 scale = Vector2( 0.853167, 0.853167 )
 collision_layer = 2
 score_change = 1
 
 [node name="Bumper3" parent="Collisions" instance=ExtResource( 3 )]
-position = Vector2( 358, 425 )
+position = Vector2( 377, 341 )
 scale = Vector2( 0.853167, 0.853167 )
 collision_layer = 2
 score_change = -1
@@ -124,17 +123,17 @@ scale = Vector2( 1.3, 1.3 )
 position = Vector2( 433, 516 )
 scale = Vector2( 1.3, 1.3 )
 
-[node name="ExtraDiceLights" type="Node2D" parent="."]
-script = ExtResource( 7 )
+[node name="Bumper4" parent="." instance=ExtResource( 7 )]
+position = Vector2( 591, 187.204 )
 
-[node name="Node2D" parent="ExtraDiceLights" instance=ExtResource( 6 )]
-position = Vector2( 608, 34 )
+[node name="Bumper5" parent="." instance=ExtResource( 7 )]
+position = Vector2( 540.763, 153.826 )
 
-[node name="Node2D2" parent="ExtraDiceLights" instance=ExtResource( 6 )]
-position = Vector2( 550, 36 )
+[node name="Bumper7" parent="." instance=ExtResource( 7 )]
+position = Vector2( 631.146, 66.7556 )
 
-[node name="Node2D3" parent="ExtraDiceLights" instance=ExtResource( 6 )]
-position = Vector2( 436, 59 )
+[node name="Bumper" parent="." instance=ExtResource( 6 )]
+position = Vector2( 568.461, 167.533 )
 
-[node name="Node2D4" parent="ExtraDiceLights" instance=ExtResource( 6 )]
-position = Vector2( 453, 102 )
+[node name="Bumper3" parent="." instance=ExtResource( 6 )]
+position = Vector2( 481.841, 115.242 )
