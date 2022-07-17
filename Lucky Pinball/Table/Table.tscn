@@ -32,11 +32,6 @@ texture = ExtResource( 1 )
 collision_layer = 4
 collision_mask = 4
 
-[node name="FlipperWallRight" type="CollisionPolygon2D" parent="Collisions/Border"]
-modulate = Color( 1, 0, 0, 1 )
-position = Vector2( 0, -19.8615 )
-polygon = PoolVector2Array( 660.292, 532.221, 665.451, 537.777, 666.642, 606.035, 583.7, 650.086, 572.588, 636.593, 646.799, 601.67, 659.102, 582.224 )
-
 [node name="FlipperWallLeft" type="CollisionPolygon2D" parent="Collisions/Border"]
 position = Vector2( 1008, -19.8615 )
 scale = Vector2( -1, 1 )
@@ -51,7 +46,7 @@ position = Vector2( 814.52, 354.968 )
 shape = SubResource( 2 )
 
 [node name="LeftBorder" type="CollisionShape2D" parent="Collisions/Border"]
-position = Vector2( 286.782, 354.968 )
+position = Vector2( 288.782, 354.968 )
 shape = SubResource( 2 )
 
 [node name="Border2" type="StaticBody2D" parent="Collisions"]
@@ -87,36 +82,45 @@ polygon = PoolVector2Array( 345.115, 428.427, 361.1, 429.605, 367.707, 433.381, 
 polygon = PoolVector2Array( 717.441, 652.352, 746.432, 653.766, 745.331, 162.307, 743.212, 138.998, 729.439, 112.512, 723.082, 93.4415, 709.309, 77.5496, 693.417, 69.0739, 682.823, 62.7171, 680.704, 66.9549, 680.704, 74.3712, 695.536, 81.7874, 701.893, 91.3226, 710.369, 105.096, 719.904, 120.988, 728.38, 147.474, 730.499, 170.782, 728.38, 187.734, 664.812, 338.177, 669.05, 343.475, 675.406, 342.415, 690.239, 314.869, 699.774, 310.631, 714.607, 309.572, 723.082, 314.869, 730.499, 324.404, 736.855, 336.059, 736.855, 350.891, 729.439, 363.605, 722.023, 372.08, 711.428, 392.21, 699.774, 429.291 )
 
 [node name="Pinwheel" parent="." instance=ExtResource( 2 )]
-position = Vector2( 407, 106 )
+position = Vector2( 398.582, 94.7754 )
 scale = Vector2( 0.85, 0.85 )
 
 [node name="SlingshotR" parent="." instance=ExtResource( 4 )]
-position = Vector2( 591, 516 )
+position = Vector2( 602.892, 516 )
 scale = Vector2( 1.3, 1.3 )
 
 [node name="SlingshotL" parent="." instance=ExtResource( 5 )]
-position = Vector2( 433, 516 )
+position = Vector2( 454.809, 516 )
 scale = Vector2( 1.3, 1.3 )
 
 [node name="Pins" type="Node2D" parent="."]
 position = Vector2( 591, 187.204 )
 
 [node name="Bumper4" parent="Pins" instance=ExtResource( 7 )]
-position = Vector2( 0, -109.204 )
+position = Vector2( -16.837, -62.6218 )
 
 [node name="Bumper5" parent="Pins" instance=ExtResource( 7 )]
-position = Vector2( -14, -54.204 )
+position = Vector2( -28.0308, -13.9082 )
 
 [node name="Bumper" parent="Pins" instance=ExtResource( 8 )]
-position = Vector2( -95, -110.204 )
+position = Vector2( -98.4871, -60.912 )
+
+[node name="Bumper2" parent="Pins" instance=ExtResource( 8 )]
+position = Vector2( -183.413, 142.275 )
+
+[node name="Bumper6" parent="Pins" instance=ExtResource( 8 )]
+position = Vector2( -196.906, 185.135 )
 
 [node name="Bumper3" parent="Pins" instance=ExtResource( 8 )]
-position = Vector2( -74, -55.204 )
+position = Vector2( -78.7622, -14.0182 )
 
 [node name="Bumpers" type="Node2D" parent="."]
 
 [node name="Bumper" parent="." instance=ExtResource( 3 )]
-position = Vector2( 655, 147 )
+position = Vector2( 648.826, 150.367 )
+
+[node name="Bumper3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 705.973, 341.649 )
 
 [node name="Bumper2" parent="." instance=ExtResource( 10 )]
-position = Vector2( 437, 218 )
+position = Vector2( 455.899, 218 )
