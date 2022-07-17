@@ -10,12 +10,13 @@ config_version=4
 
 _global_script_classes=[  ]
 _global_script_class_icons={
+
 }
 
 [application]
 
 config/name="Lucky Pinball"
-run/main_scene="res://Menu.tscn"
+run/main_scene="res://Game.tscn"
 config/icon="res://icon.png"
 
 [display]
@@ -33,7 +34,6 @@ window/stretch/aspect="keep"
 resol=false
 resolu=false
 layer=false
-projec=false
 
 [input]
 
@@ -52,4 +52,5 @@ click={
 
 [rendering]
 
+environment/default_clear_color=Color( 1, 1, 1, 1 )
 environment/default_environment="res://default_env.tres"

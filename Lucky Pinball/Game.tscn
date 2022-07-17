@@ -117,6 +117,5 @@ position = Vector2( 334, 102 )
 [node name="Pinwheel" parent="." instance=ExtResource( 10 )]
 position = Vector2( 398.582, 94.7754 )
 scale = Vector2( 0.85, 0.85 )
-
 [connection signal="body_entered" from="DiceFallZone" to="." method="_on_DiceFallZone_body_entered"]
 [connection signal="body_exited" from="DiceFallZone" to="." method="_on_DiceFallZone_body_exited"]
