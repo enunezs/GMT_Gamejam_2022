@@ -10,7 +10,11 @@
    xml:space="preserve"
    inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
    sodipodi:docname="BackgroundBase.svg"
+<<<<<<< Updated upstream
    inkscape:export-filename="BackgroundBase2.png"
+=======
+   inkscape:export-filename="BackgroundBase.png"
+>>>>>>> Stashed changes
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -28,9 +32,15 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
+<<<<<<< Updated upstream
      inkscape:zoom="1"
      inkscape:cx="544.5"
      inkscape:cy="390.5"
+=======
+     inkscape:zoom="1.0255231"
+     inkscape:cx="152.60505"
+     inkscape:cy="188.6842"
+>>>>>>> Stashed changes
      inkscape:window-width="1920"
      inkscape:window-height="1001"
      inkscape:window-x="-9"
@@ -9832,9 +9842,57 @@ AeYzxlnh1eqn9f/T+v+LrP//DzQNoq6Hsxq5AAAAAElFTkSuQmCC
 "
        id="image582"
        x="-223.10165"
+<<<<<<< Updated upstream
        y="-3.5527137e-15"
        style="stroke-width:0.52916667;stroke-dasharray:none;stroke:#000000;stroke-opacity:1" /><rect
        style="fill:#392874;fill-opacity:1;stroke:#000000;stroke-width:0.52916667;stroke-dasharray:none;stroke-opacity:1"
+=======
+       y="-3.5527137e-15" /><circle
+       style="fill:#ffffff;fill-opacity:0.395954;stroke:#212425;stroke-width:0.567191"
+       id="path638"
+       cx="48.269897"
+       cy="54.475391"
+       r="30.504436" /><circle
+       style="fill:#ffffff;stroke:#212425;stroke-width:0.529167;fill-opacity:0.22254336"
+       id="path692"
+       cx="133.28548"
+       cy="83.94091"
+       r="59.472973" /><circle
+       style="fill:#ffffff;fill-opacity:0.222543;stroke:#212425;stroke-width:0.52808"
+       id="path1303"
+       cx="133.28548"
+       cy="83.94091"
+       r="37.262554" /><rect
+       style="fill:#ffffff;fill-opacity:0.222543;stroke:#212425;stroke-width:0.529167"
+       id="rect1359"
+       width="16.558119"
+       height="202.66483"
+       x="176.05928"
+       y="86.108109"
+       ry="0" /><circle
+       style="fill:#ffffff;fill-opacity:0.222543;stroke:#212425;stroke-width:0.790177"
+       id="path1361"
+       cx="96.603966"
+       cy="55.147614"
+       r="30.435186" /><rect
+       style="fill:#ffffff;fill-opacity:0.222543;stroke:#212425;stroke-width:0.529167"
+       id="rect1427"
+       width="211.66417"
+       height="16.054054"
+       x="75.821732"
+       y="-8.903904"
+       ry="0"
+       transform="rotate(66.197916)" /><rect
+       style="fill:#ffffff;fill-opacity:0.222543;stroke:#212425;stroke-width:0.529167"
+       id="rect1460"
+       width="211.66417"
+       height="16.054054"
+       x="-1.4232399"
+       y="168.0813"
+       ry="0"
+       transform="matrix(-0.40357858,0.91494499,0.91494499,0.40357858,0,0)" /><rect
+       style="fill:#392874;fill-opacity:1;stroke:#212425;stroke-width:0.529167"
+>>>>>>> Stashed changes
        id="rect1462"
        width="158.91063"
        height="25.340502"
@@ -9842,10 +9900,23 @@ AeYzxlnh1eqn9f/T+v+LrP//DzQNoq6Hsxq5AAAAAElFTkSuQmCC
        y="263.43243"
        ry="0" /><path
        id="rect1470"
+<<<<<<< Updated upstream
        style="fill:#212425;fill-opacity:0.99215686;stroke:#000000;stroke-width:0.52916667;stroke-dasharray:none;stroke-opacity:1"
        d="M 32.27639 47.75979 L 56.843732 131.29861 L 56.904711 131.28068 C 56.871043 131.29058 56.851764 131.32592 56.861665 131.35959 L 67.879447 168.82447 C 67.882182 168.83377 67.890318 168.83856 67.896361 168.84535 L 90.937493 247.19445 L 107.43574 242.34259 L 84.405547 164.03068 L 84.580059 163.97936 C 84.598686 163.97388 84.612476 163.96038 84.61975 163.94399 C 84.632631 163.93239 84.641186 163.9165 84.641186 163.89782 L 84.641089 123.12388 L 84.640813 119.89747 L 84.640917 113.91576 C 84.640917 113.91541 84.640631 113.91512 84.640625 113.91477 L 84.640686 113.83988 A 80.320412 34.947983 73.61229 0 1 83.820193 113.85225 L 82.733766 113.85233 A 80.320412 34.947983 73.61229 0 1 32.27639 47.75979 z "
        transform="rotate(16.38771)" /><circle
        style="fill:#ffffff;fill-opacity:0.222543;stroke:#000000;stroke-width:0.52916667;stroke-dasharray:none;stroke-opacity:1"
+=======
+       width="18.790539"
+       height="47.249996"
+       x="66.07663"
+       y="118.59463"
+       ry="0.063346334"
+       transform="rotate(16.38771)" /><path
+       style="fill:#ffffff;fill-opacity:0.222543;stroke:#212425;stroke-width:0.529167"
+       d="M 17.148647,288.77294 V 15.506757"
+       id="path1474" /><circle
+       style="fill:#ffffff;fill-opacity:0.222543;stroke:#212425;stroke-width:0.529167"
+>>>>>>> Stashed changes
        id="path1493"
        cx="69.87162"
        cy="103.80405"
@@ -9889,6 +9960,7 @@ AeYzxlnh1eqn9f/T+v+LrP//DzQNoq6Hsxq5AAAAAElFTkSuQmCC
        d="m 96.603967,226.39864 c 4.726783,0.19231 9.475453,12.31851 13.302683,15.09911 3.50442,2.54606 15.89046,2.79031 17.06044,6.96099 1.27775,4.55486 -8.78753,12.81832 -10.24936,17.31749 -1.33852,4.11967 2.25668,15.97497 -1.34832,18.37649 -3.93709,2.62275 -14.90645,-4.39635 -19.637141,-4.39631 -4.331671,3e-5 -14.49575,7.08276 -17.893745,4.39631 -3.711008,-2.93391 -0.425159,-15.53542 -1.887062,-20.03456 -1.338596,-4.11965 -11.215542,-11.59758 -9.710617,-15.65943 1.643555,-4.43601 14.643683,-5.20506 18.470869,-7.98572 3.504373,-2.54612 7.564163,-14.25046 11.892253,-14.07437 z"
        inkscape:transform-center-x="-3.4146172e-06"
        inkscape:transform-center-y="-3.096402"
+<<<<<<< Updated upstream
        transform="matrix(1.0045337,0,0,1.0156672,-0.47588652,-4.454954)" /><path
        id="rect1585"
        style="fill:#b1739a;fill-opacity:1;stroke:#000000;stroke-width:0.52916667;stroke-dasharray:none;stroke-opacity:1"
@@ -9901,3 +9973,24 @@ AeYzxlnh1eqn9f/T+v+LrP//DzQNoq6Hsxq5AAAAAElFTkSuQmCC
        style="fill:#5c4ed0;fill-opacity:0.222543;stroke:#000000;stroke-width:0.52916667;stroke-dasharray:none;stroke-opacity:1"
        d="m 17.148647,263.43243 0.341758,-82.31532"
        id="path38581" /></g></svg>
+=======
+       transform="matrix(1.0045337,0,0,1.0156672,-0.29647208,-4.454954)" /><rect
+       style="fill:#ed7275;fill-opacity:0;stroke:#212425;stroke-width:0.529167"
+       id="rect27707"
+       width="38.535618"
+       height="17.059103"
+       x="96.603958"
+       y="24.581923" /><rect
+       style="fill:#ed7275;fill-opacity:0;stroke:#212425;stroke-width:0.529167"
+       id="rect27839"
+       width="175.13553"
+       height="61.790768"
+       x="17.481865"
+       y="24.317339" /><ellipse
+       style="fill:#ed7275;fill-opacity:0;stroke:#212425;stroke-width:0.504142"
+       id="path28623"
+       cx="47.959621"
+       cy="55.276882"
+       rx="30.807108"
+       ry="82.702179" /></g></svg>
+>>>>>>> Stashed changes

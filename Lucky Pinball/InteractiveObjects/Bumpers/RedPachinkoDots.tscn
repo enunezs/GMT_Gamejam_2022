@@ -1,5 +1,9 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [gd_scene load_steps=8 format=2]
+=======
+[gd_scene load_steps=5 format=2]
+>>>>>>> Stashed changes
 =======
 [gd_scene load_steps=5 format=2]
 >>>>>>> Stashed changes
@@ -11,6 +15,7 @@
 friction = 0.13
 bounce = 1.0
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 [sub_resource type="GDScript" id=2]
 script/source = "extends StaticBody2D
@@ -92,6 +97,10 @@ tracks/0/keys = {
 [sub_resource type="CircleShape2D" id=2]
 radius = 22.0
 >>>>>>> Stashed changes
+=======
+[sub_resource type="CircleShape2D" id=2]
+radius = 22.0
+>>>>>>> Stashed changes
 
 [sub_resource type="CircleShape2D" id=5]
 radius = 40.0129
@@ -121,8 +130,11 @@ scale = Vector2( 0.12, 0.12 )
 texture = ExtResource( 1 )
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [node name="point_up" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 2 )
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
