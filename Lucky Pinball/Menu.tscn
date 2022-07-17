@@ -47,5 +47,6 @@ margin_right = 57.0
 margin_bottom = 68.0
 focus_neighbour_bottom = NodePath("../StartButton")
 text = "Quit"
+
 [connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_StartButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/Quitbutton" to="." method="_on_Quitbutton_pressed"]
