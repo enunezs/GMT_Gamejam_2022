@@ -11,12 +11,18 @@ func _ready():
 	pass
 	
 func add_score(_score):
+	
+	if _score >0:
+		$AudioStreamPlayer2D.play()
+	
 	score += _score
+	
+	
 	if score <= 0:
 		#Delete?
-		score = +6
+		score = +1
 	elif score > 6:
-		score -=6
+		score -=1
 		
 	update_sprite()
 	
@@ -29,3 +35,8 @@ func update_sprite():
 	
 	$AnimatedSprite.frame = score
 	
+
+
+func _on_Die_body_entered(body):
+	$AudioStreamPlayer2D_wall.play()
+	pass # Replace with function body.
