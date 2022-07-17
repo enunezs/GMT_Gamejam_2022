@@ -4,7 +4,6 @@
 [ext_resource path="res://Assets/TrueAssetsInator/Bumpers/blue_off.png" type="Texture" id=2]
 [ext_resource path="res://Assets/TrueAssetsInator/Bumpers/blue_on.png" type="Texture" id=3]
 
-
 [sub_resource type="PhysicsMaterial" id=1]
 friction = 0.13
 bounce = 1.0
@@ -12,16 +11,15 @@ bounce = 1.0
 [sub_resource type="CircleShape2D" id=2]
 radius = 22.0
 
-[sub_resource type="SpriteFrames" id=5]
+[sub_resource type="SpriteFrames" id=3]
 animations = [ {
-"frames": [ ExtResource( 3 ), ExtResource( 2 ) ],
+"frames": [ ExtResource( 2 ), ExtResource( 3 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
 } ]
 
-[sub_resource type="Animation" id=3]
-resource_name = "Bump"
+[sub_resource type="Animation" id=4]
 length = 0.3
 step = 0.05
 tracks/0/type = "value"
@@ -34,7 +32,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.05, 0.1 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 1,
-"values": [ SubResource( 5 ), SubResource( 5 ), SubResource( 5 ) ]
+"values": [ SubResource( 3 ), SubResource( 3 ), SubResource( 3 ) ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("AnimatedSprite:scale")
@@ -61,7 +59,7 @@ tracks/2/keys = {
 "values": [ 1, 0, 1 ]
 }
 
-[sub_resource type="CircleShape2D" id=4]
+[sub_resource type="CircleShape2D" id=5]
 radius = 27.0185
 
 [node name="Bumper" type="StaticBody2D"]
@@ -74,7 +72,7 @@ score_change = -1
 shape = SubResource( 2 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/Bump = SubResource( 3 )
+anims/Bump = SubResource( 4 )
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2( 9.31323e-10, 0 )
@@ -82,10 +80,10 @@ collision_layer = 8
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-shape = SubResource( 4 )
+shape = SubResource( 5 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 0.19, 0.19 )
-frames = SubResource( 5 )
+frames = SubResource( 3 )
 frame = 1
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

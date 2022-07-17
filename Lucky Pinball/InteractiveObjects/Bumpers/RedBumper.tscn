@@ -4,7 +4,6 @@
 [ext_resource path="res://Assets/TrueAssetsInator/Bumpers/red_off.png" type="Texture" id=2]
 [ext_resource path="res://Assets/TrueAssetsInator/Bumpers/red_on.png" type="Texture" id=3]
 
-
 [sub_resource type="PhysicsMaterial" id=1]
 friction = 0.13
 bounce = 1.0
@@ -14,7 +13,7 @@ radius = 22.0
 
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
-"frames": [ ExtResource( 3 ), ExtResource( 2 ) ],
+"frames": [ ExtResource( 2 ), ExtResource( 3 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
@@ -86,5 +85,4 @@ shape = SubResource( 5 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 0.19, 0.19 )
 frames = SubResource( 3 )
-frame = 1
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
