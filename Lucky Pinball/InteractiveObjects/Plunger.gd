@@ -29,7 +29,7 @@ func plunger_update(delta):
 	if cur_hold < max_hold_time:
 		cur_hold += delta
 		
-		print(cur_hold/max_hold_time)
+		#print(cur_hold/max_hold_time)
 		$PinPoint.position.y =  cur_hold/max_hold_time*max_strength
 	pass
 	

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/BasicDice.svg-8e2007590b968ff155a2ea5d14ca08f4.stex"
+path="res://.import/Card_Blank (1).png-add6f027fb633b019178a7b6a05d0e3a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://InteractiveObjects/Dice/BasicDice.svg"
-dest_files=[ "res://.import/BasicDice.svg-8e2007590b968ff155a2ea5d14ca08f4.stex" ]
+source_file="res://Assets/Card_Blank (1).png"
+dest_files=[ "res://.import/Card_Blank (1).png-add6f027fb633b019178a7b6a05d0e3a.stex" ]
 
 [params]
 

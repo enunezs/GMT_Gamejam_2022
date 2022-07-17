@@ -1,7 +1,7 @@
 [gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://Assets/TemporaryAssets/Dice/die1.png" type="Texture" id=1]
-[ext_resource path="res://InteractiveObjects/Die.gd" type="Script" id=2]
+[ext_resource path="res://InteractiveObjects/Dice/Die.gd" type="Script" id=2]
 [ext_resource path="res://InteractiveObjects/metal.tres" type="PhysicsMaterial" id=3]
 [ext_resource path="res://InteractiveObjects/Dice/BasicDice.png" type="Texture" id=4]
 
@@ -66,9 +66,9 @@ extents = Vector2( 12.6403, 13.5665 )
 
 [node name="Die" type="RigidBody2D"]
 collision_mask = 15
-mass = 1.02041
+mass = 0.612245
 physics_material_override = ExtResource( 3 )
-gravity_scale = 4.0
+gravity_scale = 5.0
 script = ExtResource( 2 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
