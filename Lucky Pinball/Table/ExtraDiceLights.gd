@@ -27,4 +27,5 @@ func lights_up(son):
 	cur_lights +=1
 	if cur_lights == total_lights:
 		get_parent()._spawn_dice(1)
+		_ready()
 		pass
