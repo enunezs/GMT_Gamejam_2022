@@ -5,7 +5,7 @@
 
 [sub_resource type="PhysicsMaterial" id=1]
 friction = 0.13
-bounce = 1.0
+bounce = 0.5
 
 [sub_resource type="Animation" id=3]
 resource_name = "Bump"
@@ -43,7 +43,7 @@ height = 43.05
 [node name="Slingshot" type="StaticBody2D"]
 physics_material_override = SubResource( 1 )
 script = ExtResource( 1 )
-bumper_force = 300
+bumper_force = 500
 score_change = 1
 
 [node name="Bumper" type="Sprite" parent="."]

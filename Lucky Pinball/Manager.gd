@@ -7,7 +7,10 @@ extends Node2D
 
 var score = 0
 var dices = []
-var dice_goal = 0
+var dice_to_spawn = 2
+
+var cur_score = 0
+var score_goal = 0
 #var dice = preload("res://node.tscn")
 export (PackedScene) var dice_scene
 var rng = RandomNumberGenerator.new()
@@ -18,24 +21,25 @@ signal new_target_set(target)
 func _ready():
 	
 	score = 0
+	cur_score = 0
 	
 	rng.seed = hash("Ema")
 	#rng.state = 1 # Restore
 	rng.randomize()
 	
-	dice_goal = set_goal()
+	score_goal = set_goal()
 
-	_spawn_dice(2)
+	_spawn_dice(dice_to_spawn)
 	
 	pass # Replace with function body.
 
 func set_goal():
 	
-	dice_goal = rng.randi_range(2,12)
+	score_goal = rng.randi_range(2,12)
 	
-	$Score.update_score(dice_goal)
-	#emit_signal("new_target_set", dice_goal)
-	return dice_goal
+	$Score.update_score(score_goal)
+	#emit_signal("new_target_set", score_goal)
+	return score_goal
 	
 	
 
@@ -54,8 +58,41 @@ func _spawn_dice(num):
 		dices.append(instance)
 	
 	
-
+func game_over():
+	
+	
+	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
+
+var dice_on_fall_zone = 0
+func _on_DiceFallZone_body_entered(body):
+	print("Die: " +  str(body.get_score()) + "has fallen")
+	body.sleeping = true
+	cur_score += body.get_score()
+	dice_on_fall_zone += 1
+	#body.score
+
+	if dice_on_fall_zone == dice_to_spawn:
+		yield(get_tree().create_timer(3.0), "timeout")
+		
+			
+		if dice_on_fall_zone == dice_to_spawn:
+			game_over()
+			
+			
+	
+	pass # Replace with function body.
+
+
+func _on_DiceFallZone_body_exited(body):
+	print("Die: " +  str(body.get_score()) + "has exited?")
+	body.sleeping = false
+	cur_score -= body.get_score()
+	#body.score
+	dice_on_fall_zone -= 1
+
+	
+	

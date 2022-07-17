@@ -66,7 +66,7 @@ extents = Vector2( 12.6403, 13.5665 )
 
 [node name="Die" type="RigidBody2D"]
 collision_mask = 15
-mass = 0.612245
+mass = 0.408163
 physics_material_override = ExtResource( 3 )
 gravity_scale = 5.0
 script = ExtResource( 2 )
