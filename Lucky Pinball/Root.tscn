@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Table/Table.tscn" type="PackedScene" id=1]
 [ext_resource path="res://InteractiveObjects/Flippers/Flipper.tscn" type="PackedScene" id=2]
@@ -7,6 +7,8 @@
 [ext_resource path="res://Assets/Fonts/Limelight/Limelight-Regular.ttf" type="DynamicFontData" id=5]
 [ext_resource path="res://Assets/Card_Blank (2).png" type="Texture" id=6]
 [ext_resource path="res://Table/GoalScoreManager.gd" type="Script" id=7]
+[ext_resource path="res://InteractiveObjects/LightUps/LightUp.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Table/ExtraDiceLights.gd" type="Script" id=9]
 
 [sub_resource type="Theme" id=1]
 
@@ -91,6 +93,25 @@ collision_mask = 0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DiceFallZone"]
 position = Vector2( 492, 701 )
 shape = SubResource( 3 )
+
+[node name="LightsUpManager" type="Node2D" parent="."]
+position = Vector2( -14, 50 )
+script = ExtResource( 9 )
+
+[node name="Node2D" parent="LightsUpManager" instance=ExtResource( 8 )]
+position = Vector2( 377, 91 )
+
+[node name="Node2D2" parent="LightsUpManager" instance=ExtResource( 8 )]
+position = Vector2( 373, 43 )
+
+[node name="Node2D3" parent="LightsUpManager" instance=ExtResource( 8 )]
+position = Vector2( 405, 4 )
+
+[node name="Node2D4" parent="LightsUpManager" instance=ExtResource( 8 )]
+position = Vector2( 453, 12 )
+
+[node name="Node2D5" parent="LightsUpManager" instance=ExtResource( 8 )]
+position = Vector2( 461, 59 )
 
 [connection signal="body_entered" from="DiceFallZone" to="." method="_on_DiceFallZone_body_entered"]
 [connection signal="body_exited" from="DiceFallZone" to="." method="_on_DiceFallZone_body_exited"]

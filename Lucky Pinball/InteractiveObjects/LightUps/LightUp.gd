@@ -26,6 +26,6 @@ func _on_Area2D_body_entered(body):
 		lights_on = true
 		$AnimatedSprite.frame = 1
 	
-	get_parent().lights_up(self)
+		get_parent().lights_up(self)
 	
 	pass # Replace with function body.

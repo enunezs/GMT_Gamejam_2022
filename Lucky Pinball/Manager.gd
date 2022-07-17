@@ -8,6 +8,7 @@ extends Node2D
 var score = 0
 var dices = []
 var dice_to_spawn = 2
+var dice_spawned =0
 
 var cur_score = 0
 var score_goal = 0
@@ -22,6 +23,7 @@ func _ready():
 	
 	score = 0
 	cur_score = 0
+	dice_spawned =0
 	
 	rng.seed = hash("Ema")
 	#rng.state = 1 # Restore
@@ -42,6 +44,8 @@ func set_goal():
 	return score_goal
 	
 	
+func extra_dice():
+	_spawn_dice(1)
 
 func _spawn_dice(num):
 	
@@ -56,6 +60,7 @@ func _spawn_dice(num):
 		instance.position = dices_spawn_location
 		add_child(instance)
 		dices.append(instance)
+		dice_spawned +=1
 	
 	
 func game_over():
@@ -93,11 +98,11 @@ func _on_DiceFallZone_body_entered(body):
 	dice_on_fall_zone += 1
 	#body.score
 
-	if dice_on_fall_zone == dice_to_spawn:
+	if dice_on_fall_zone == dice_spawned:
 		yield(get_tree().create_timer(1.5), "timeout")
 		
 			
-		if dice_on_fall_zone == dice_to_spawn:
+		if dice_on_fall_zone == dice_spawned:
 			game_over()
 			
 			
