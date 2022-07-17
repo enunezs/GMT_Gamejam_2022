@@ -17,7 +17,7 @@ outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 5 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 76, 13.5 )
+extents = Vector2( 189, 13.5 )
 
 [node name="Root" type="Node2D"]
 script = ExtResource( 4 )
@@ -40,7 +40,7 @@ position = Vector2( 577, 619 )
 up_torque = 400000
 
 [node name="SpawnLocation" type="Node2D" parent="."]
-position = Vector2( 724, 471 )
+position = Vector2( 731, 347 )
 
 [node name="Score" type="Node2D" parent="."]
 position = Vector2( 557, 644 )
@@ -89,7 +89,7 @@ collision_layer = 8
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DiceFallZone"]
-position = Vector2( 509, 701 )
+position = Vector2( 492, 701 )
 shape = SubResource( 3 )
 
 [connection signal="body_entered" from="DiceFallZone" to="." method="_on_DiceFallZone_body_entered"]

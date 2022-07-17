@@ -43,7 +43,8 @@ height = 43.05
 [node name="SlingshotRight" type="StaticBody2D"]
 physics_material_override = SubResource( 1 )
 script = ExtResource( 1 )
-bumper_force = 300
+bounce_mode = 0
+bumper_force = 30
 score_change = -1
 
 [node name="Bumper" type="Sprite" parent="."]

@@ -28,7 +28,7 @@ func _ready():
 	rng.randomize()
 	
 	score_goal = set_goal()
-
+	dices = []
 	_spawn_dice(dice_to_spawn)
 	
 	pass # Replace with function body.
@@ -60,6 +60,24 @@ func _spawn_dice(num):
 	
 func game_over():
 	
+	print("Game Over")
+	# Erase dice
+	for dice in dices:
+		dice.queue_free()
+	
+	# Check if won?
+	if cur_score == score_goal:
+		#won()
+		print("Won! Next round")
+		_ready()
+	else:
+		#lost()	
+		print("Boooh! Game lost")
+		pass
+	
+	# If won, spawn new dice and mission
+	
+	#If lost, kick out to menu
 	
 	pass
 
@@ -70,13 +88,13 @@ func game_over():
 var dice_on_fall_zone = 0
 func _on_DiceFallZone_body_entered(body):
 	print("Die: " +  str(body.get_score()) + "has fallen")
-	body.sleeping = true
+	#body.sleeping = true
 	cur_score += body.get_score()
 	dice_on_fall_zone += 1
 	#body.score
 
 	if dice_on_fall_zone == dice_to_spawn:
-		yield(get_tree().create_timer(3.0), "timeout")
+		yield(get_tree().create_timer(1.5), "timeout")
 		
 			
 		if dice_on_fall_zone == dice_to_spawn:
@@ -92,7 +110,8 @@ func _on_DiceFallZone_body_exited(body):
 	body.sleeping = false
 	cur_score -= body.get_score()
 	#body.score
-	dice_on_fall_zone -= 1
+	if len(dices)>0:
+		dice_on_fall_zone -= 1
 
 	
 	
