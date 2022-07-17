@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/point_down.wav-bd51a3529c7a1a8a767fc8d4c9fb11ff.sample"
+
+[deps]
+
+source_file="res://Audio/point_down.wav"
+dest_files=[ "res://.import/point_down.wav-bd51a3529c7a1a8a767fc8d4c9fb11ff.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
