@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/LeftSlingshot.svg-3366be4b8cd759183bc27ece16d62511.stex"
+path="res://.import/Dice & Bite.png-60c22657b6dfd0223ba9b5e801f5a9f2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://InteractiveObjects/Slingshots/LeftSlingshot.svg"
-dest_files=[ "res://.import/LeftSlingshot.svg-3366be4b8cd759183bc27ece16d62511.stex" ]
+source_file="res://Background/Dice & Bite.png"
+dest_files=[ "res://.import/Dice & Bite.png-60c22657b6dfd0223ba9b5e801f5a9f2.stex" ]
 
 [params]
 
