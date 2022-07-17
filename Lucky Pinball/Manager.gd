@@ -61,6 +61,7 @@ func _spawn_dice(num):
 		add_child(instance)
 		dices.append(instance)
 		dice_spawned +=1
+		yield(get_tree().create_timer(0.5), "timeout")
 	
 	
 func game_over():
