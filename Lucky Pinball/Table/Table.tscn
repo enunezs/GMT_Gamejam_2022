@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Table/BackgroundBase2.png" type="Texture" id=1]
 [ext_resource path="res://InteractiveObjects/Pinwheel.tscn" type="PackedScene" id=2]
@@ -14,9 +14,6 @@ extents = Vector2( 249.353, 13.4696 )
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 21.9907, 374.845 )
-
-[sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 16, 167 )
 
 [sub_resource type="PhysicsMaterial" id=4]
 absorbent = true
@@ -46,16 +43,12 @@ scale = Vector2( -1, 1 )
 polygon = PoolVector2Array( 660.292, 532.221, 665.451, 537.777, 666.642, 606.035, 583.7, 650.086, 572.588, 636.593, 646.799, 601.67, 659.102, 582.224 )
 
 [node name="UpperBorder" type="CollisionShape2D" parent="Collisions/Border"]
-position = Vector2( 527.984, -16.2247 )
+position = Vector2( 544.372, -18.8944 )
 shape = SubResource( 1 )
 
 [node name="RightBorder" type="CollisionShape2D" parent="Collisions/Border"]
-position = Vector2( 771.069, 354.968 )
+position = Vector2( 814.52, 354.968 )
 shape = SubResource( 2 )
-
-[node name="RightBorder2" type="CollisionShape2D" parent="Collisions/Border"]
-position = Vector2( 692, 561 )
-shape = SubResource( 3 )
 
 [node name="LeftBorder" type="CollisionShape2D" parent="Collisions/Border"]
 position = Vector2( 286.782, 354.968 )
@@ -72,20 +65,26 @@ shape = SubResource( 1 )
 
 [node name="Edges" type="StaticBody2D" parent="Collisions"]
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Collisions/Edges"]
-position = Vector2( 66, 29 )
-polygon = PoolVector2Array( 522, -26, 575, -17, 630, 0, 663, 18, 681, 55, 695, 121, 704, -40, 484, -38 )
-
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Collisions/Edges"]
-polygon = PoolVector2Array( 458, 42, 478, 18, 499, 1, 537, -4, 440, -10 )
+polygon = PoolVector2Array( 792.667, 166.65, 792.106, -5.64783, 538.43, -5.64783, 481.746, -5.64783, 485.113, 78.5368, 491.286, 75.1694, 498.582, 67.3122, 509.807, 54.4039, 526.644, 38.1282, 545.726, 23.5362, 567.053, 13.434, 598.482, 5.01556, 619.247, 2.2094, 649.554, 2.2094, 677.054, 6.13802, 712.411, 21.2913, 739.351, 43.1793, 753.943, 62.2611, 768.535, 79.6593, 780.499, 109.292 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Collisions/Edges"]
+polygon = PoolVector2Array( 312.273, 103.229, 312.273, 0.545609, 484.252, -0.71431, 486.142, 78.0307, 483.622, 78.0307, 481.774, 78.3496, 480.199, 76.1447, 478.624, 67.6402, 474.529, 50.3163, 465.08, 36.7722, 453.426, 23.858, 443.342, 15.4044, 432.41, 9.51812, 416.433, 3.63185, 404.661, 1.95006, 391.627, 1.95006, 377.752, 3.63185, 361.355, 8.25678, 345.378, 18.768, 331.923, 31.8019, 321.832, 46.5176, 318.048, 59.5515, 314.264, 73.0058 )
 
 [node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Collisions/Edges"]
-position = Vector2( -110, 19 )
-polygon = PoolVector2Array( 499, 277, 476, 225, 458, 168, 450, 109, 452, 57, 479, 20, 518, 3, 549, 11, 568, 24, 549, -29, 404, -36, 416, 256, 465, 298, 488, 298, 501, 300 )
+polygon = PoolVector2Array( 310.901, 98.2327, 313.003, 98.2327, 313.844, 118.414, 317.628, 158.357, 327.298, 203.345, 338.65, 231.935, 349.582, 255.901, 358.19, 268.264, 367.736, 279.931, 378.696, 289.831, 387.181, 295.487, 392.838, 297.255, 399.202, 298.316, 392.131, 321.297, 384.706, 350.642, 377.989, 371.501, 361.203, 429.486, 357.04, 430.081, 352.581, 432.162, 347.824, 440.189, 346.635, 445.243, 347.527, 450.595, 346.932, 453.568, 347.229, 456.541, 348.021, 517.766, 347.314, 599.083, 358.627, 604.033, 359.335, 653.531, 313.373, 653.531, 311.251, 270.986 )
+
+[node name="CollisionPolygon2D5" type="CollisionPolygon2D" parent="Collisions/Edges"]
+polygon = PoolVector2Array( 344.582, 428.189, 361.1, 429.605, 367.707, 433.381, 371.482, 438.1, 372.898, 449.426, 373.37, 582.985, 373.37, 585.344, 464.926, 624.043, 452.216, 653.745, 342.809, 652.556 )
+
+[node name="CollisionPolygon2D6" type="CollisionPolygon2D" parent="Collisions/Edges"]
+position = Vector2( 1059.29, 0 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+polygon = PoolVector2Array( 345.115, 428.427, 361.1, 429.605, 367.707, 433.381, 371.482, 438.1, 372.898, 449.426, 373.37, 582.985, 372.726, 585.162, 464.926, 624.043, 452.216, 653.745, 342.809, 652.556 )
 
 [node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="Collisions/Edges"]
-position = Vector2( -115, 19 )
-polygon = PoolVector2Array( 814, 81, 826, 115, 816, 200, 799, 229, 767, 288, 746, 317, 791, 290, 806, 296, 822, 307, 814, 331, 794, 361, 812, 390, 821, 433, 823, 374, 827, 281, 832, 114, 819, 77 )
+polygon = PoolVector2Array( 717.441, 652.352, 746.432, 653.766, 745.331, 162.307, 743.212, 138.998, 729.439, 112.512, 723.082, 93.4415, 709.309, 77.5496, 693.417, 69.0739, 682.823, 62.7171, 680.704, 66.9549, 680.704, 74.3712, 695.536, 81.7874, 701.893, 91.3226, 710.369, 105.096, 719.904, 120.988, 728.38, 147.474, 730.499, 170.782, 728.38, 187.734, 664.812, 338.177, 669.05, 343.475, 675.406, 342.415, 690.239, 314.869, 699.774, 310.631, 714.607, 309.572, 723.082, 314.869, 730.499, 324.404, 736.855, 336.059, 736.855, 350.891, 729.439, 363.605, 722.023, 372.08, 711.428, 392.21, 699.774, 429.291 )
 
 [node name="Pinwheel" parent="." instance=ExtResource( 2 )]
 position = Vector2( 407, 106 )
