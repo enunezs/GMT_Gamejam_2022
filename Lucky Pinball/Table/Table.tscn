@@ -25,23 +25,23 @@ absorbent = true
 [node name="Node2D" type="Node2D"]
 
 [node name="Close-up-yellow-desert-sand-213128282" type="Sprite" parent="."]
-position = Vector2( 640, 348 )
-scale = Vector2( 1.6625, 1.6625 )
+position = Vector2( 574, 381.75 )
+scale = Vector2( 1.7925, 1.71875 )
 texture = ExtResource( 2 )
 
 [node name="Background" type="Sprite" parent="."]
-position = Vector2( 552.125, 341 )
+position = Vector2( 530, 187 )
 scale = Vector2( 0.723237, 0.723234 )
 texture = ExtResource( 1 )
+offset = Vector2( 30.5916, 212.932 )
 
 [node name="Sprite" type="Sprite" parent="."]
 modulate = Color( 1, 1, 1, 0.270588 )
-position = Vector2( 528.567, 452.424 )
+position = Vector2( 161, 273 )
 scale = Vector2( 0.133034, 0.133034 )
 texture = ExtResource( 6 )
 
 [node name="Collisions" type="Node2D" parent="."]
-visible = false
 
 [node name="Border" type="StaticBody2D" parent="Collisions"]
 collision_layer = 4
@@ -74,6 +74,7 @@ position = Vector2( 544, 728 )
 shape = SubResource( 1 )
 
 [node name="Edges" type="StaticBody2D" parent="Collisions"]
+visible = false
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Collisions/Edges"]
 polygon = PoolVector2Array( 793, 168, 792.106, -5.64783, 538.43, -5.64783, 481.746, -5.64783, 482, 78, 485, 80, 489, 80, 493, 77, 498, 70, 509, 55, 521, 44, 531, 35, 546, 25, 557, 19, 569, 14, 582, 9, 598, 5, 619.247, 2.2094, 649.554, 2.2094, 676, 9, 696, 16, 713, 25, 728, 35, 741, 45, 754, 59, 763, 71, 772, 85, 777, 96, 783, 109, 788, 127, 791, 143 )
@@ -96,6 +97,9 @@ polygon = PoolVector2Array( 345.115, 428.427, 361.1, 429.605, 367.707, 433.381, 
 [node name="CollisionPolygon2D4" type="CollisionPolygon2D" parent="Collisions/Edges"]
 polygon = PoolVector2Array( 719, 721, 746, 724, 744, 175, 744, 156, 742, 140, 736, 122, 730, 109, 722, 97, 713, 86, 703, 77, 694, 70, 688, 66, 684, 66, 681, 70, 680.704, 74.3712, 683, 77, 691, 83, 697, 87, 701.893, 91.3226, 713, 104, 723, 121, 729, 139, 731, 154, 732, 173, 729, 189, 723, 207, 717, 221, 667, 333, 666, 339, 668, 343, 673, 344, 675.406, 342.415, 680, 324, 690.239, 314.869, 699.774, 310.631, 714.607, 309.572, 723.082, 314.869, 730.499, 324.404, 736.855, 336.059, 736.855, 350.891, 729.439, 363.605, 722.023, 372.08, 711.428, 392.21, 699.774, 429.291 )
 
+[node name="CollisionPolygon2D7" type="CollisionPolygon2D" parent="Collisions/Edges"]
+polygon = PoolVector2Array( 526, 222, 548, 223, 559, 227, 576, 251, 591, 280, 590, 290, 584, 281, 560, 268, 530, 259, 506, 266, 479, 280, 466, 290, 476, 258, 494, 226, 503, 222 )
+
 [node name="SlingshotR" parent="." instance=ExtResource( 4 )]
 position = Vector2( 602.892, 533 )
 scale = Vector2( 1.3, 1.3 )
@@ -108,17 +112,24 @@ scale = Vector2( 1.3, 1.3 )
 position = Vector2( 591, 187.204 )
 
 [node name="Bumper4" parent="Pins" instance=ExtResource( 7 )]
-position = Vector2( -129, -71.204 )
+position = Vector2( -94, -42.204 )
+scale = Vector2( 0.5, 0.5 )
+
+[node name="Bumper6" parent="Pins" instance=ExtResource( 7 )]
+position = Vector2( -62, -2.20399 )
+scale = Vector2( 0.5, 0.5 )
 
 [node name="Bumper5" parent="Pins" instance=ExtResource( 7 )]
-position = Vector2( -24, -28.204 )
+position = Vector2( 0, -2.20399 )
+scale = Vector2( 0.5, 0.5 )
 
 [node name="Bumper" parent="Pins" instance=ExtResource( 8 )]
-position = Vector2( 3, -74.204 )
+position = Vector2( -34, -43.204 )
+scale = Vector2( 0.5, 0.5 )
 
 [node name="Bumper3" parent="Pins" instance=ExtResource( 8 )]
-position = Vector2( -96, -27.204 )
-scale = Vector2( 0.996108, 1 )
+position = Vector2( -126, -0.203995 )
+scale = Vector2( 0.5, 0.5 )
 
 [node name="Bumpers" type="Node2D" parent="."]
 
@@ -128,7 +139,7 @@ rotation = 0.351267
 scale = Vector2( 1.22939, 1.22939 )
 
 [node name="Bumper2" parent="." instance=ExtResource( 10 )]
-position = Vector2( 631, 163 )
+position = Vector2( 632, 159 )
 
 [node name="Label" type="Label" parent="."]
 margin_left = 312.0
@@ -196,4 +207,4 @@ bite"
 position = Vector2( 376, 356 )
 
 [node name="Bumper3" parent="." instance=ExtResource( 12 )]
-position = Vector2( 456, 219 )
+position = Vector2( 531, 341 )

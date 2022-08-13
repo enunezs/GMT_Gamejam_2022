@@ -24,6 +24,7 @@ font_data = ExtResource( 5 )
 extents = Vector2( 221.5, 13.5 )
 
 [node name="Game" type="Node2D"]
+position = Vector2( 77, 20 )
 script = ExtResource( 4 )
 
 [node name="Table" parent="." instance=ExtResource( 1 )]
@@ -48,7 +49,7 @@ up_torque = 400000
 position = Vector2( 769, 310 )
 
 [node name="Score" type="Node2D" parent="."]
-position = Vector2( 557, 560 )
+position = Vector2( 557, 589 )
 script = ExtResource( 7 )
 
 [node name="CardBlankTens" type="Sprite" parent="Score"]
