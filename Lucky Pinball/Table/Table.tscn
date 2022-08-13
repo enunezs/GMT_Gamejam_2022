@@ -1,6 +1,6 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
-[ext_resource path="res://Table/BackgroundBase2.png" type="Texture" id=1]
+[ext_resource path="res://Table/BackgroundBaseOld.svg" type="Texture" id=1]
 [ext_resource path="res://Assets/close-up-yellow-desert-sand-213128282.jpg" type="Texture" id=2]
 [ext_resource path="res://InteractiveObjects/Bumpers/RedBumper.tscn" type="PackedScene" id=3]
 [ext_resource path="res://InteractiveObjects/Slingshots/SlingshotRight.tscn" type="PackedScene" id=4]
@@ -10,6 +10,7 @@
 [ext_resource path="res://InteractiveObjects/Bumpers/BluePachinkoDots.tscn" type="PackedScene" id=8]
 [ext_resource path="res://new_theme.tres" type="Theme" id=9]
 [ext_resource path="res://InteractiveObjects/Bumpers/BlueBumper.tscn" type="PackedScene" id=10]
+[ext_resource path="res://InteractiveObjects/Bumpers/BlueLongBumper.tscn" type="PackedScene" id=11]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 249.353, 13.4696 )
@@ -114,12 +115,6 @@ position = Vector2( -28.0308, -13.9082 )
 [node name="Bumper" parent="Pins" instance=ExtResource( 8 )]
 position = Vector2( -98.4871, -60.912 )
 
-[node name="Bumper2" parent="Pins" instance=ExtResource( 8 )]
-position = Vector2( -183.413, 142.275 )
-
-[node name="Bumper6" parent="Pins" instance=ExtResource( 8 )]
-position = Vector2( -196.906, 185.135 )
-
 [node name="Bumper3" parent="Pins" instance=ExtResource( 8 )]
 position = Vector2( -78.7622, -14.0182 )
 
@@ -129,7 +124,7 @@ position = Vector2( -78.7622, -14.0182 )
 position = Vector2( 648.826, 150.367 )
 
 [node name="Bumper3" parent="." instance=ExtResource( 3 )]
-position = Vector2( 705.973, 341.649 )
+position = Vector2( 709, 341 )
 
 [node name="Bumper2" parent="." instance=ExtResource( 10 )]
 position = Vector2( 455.899, 218 )
@@ -154,14 +149,15 @@ theme = ExtResource( 9 )
 text = "Dice"
 
 [node name="Label3" type="Label" parent="."]
-margin_left = 342.0
-margin_top = 400.0
-margin_right = 576.0
-margin_bottom = 440.0
+margin_left = 323.0
+margin_top = 391.0
+margin_right = 557.0
+margin_bottom = 431.0
 rect_rotation = -72.0932
 rect_scale = Vector2( 0.429881, 0.461876 )
 theme = ExtResource( 9 )
-text = "Minus points!"
+text = "Slim down!"
+align = 1
 
 [node name="Label4" type="Label" parent="."]
 margin_left = 509.0
@@ -185,12 +181,15 @@ theme = ExtResource( 9 )
 text = "Lets go!"
 
 [node name="Label6" type="Label" parent="."]
-margin_left = 706.0
-margin_top = 259.0
-margin_right = 940.0
-margin_bottom = 342.0
+margin_left = 712.0
+margin_top = 265.0
+margin_right = 826.0
+margin_bottom = 348.0
 rect_rotation = 26.1349
 rect_scale = Vector2( 0.429881, 0.461876 )
 theme = ExtResource( 9 )
 text = "Big 
 bite"
+
+[node name="Bumper4" parent="." instance=ExtResource( 11 )]
+position = Vector2( 376, 356 )
