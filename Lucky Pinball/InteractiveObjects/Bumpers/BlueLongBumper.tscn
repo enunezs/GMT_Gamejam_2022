@@ -79,6 +79,7 @@ shape = SubResource( 5 )
 anims/Bump = SubResource( 4 )
 
 [node name="Area2D" type="Area2D" parent="."]
+visible = false
 position = Vector2( 9.31323e-10, 0 )
 collision_layer = 8
 collision_mask = 0
