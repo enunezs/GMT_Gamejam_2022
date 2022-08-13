@@ -30,7 +30,7 @@ script = ExtResource( 4 )
 position = Vector2( -1, -4 )
 
 [node name="Plunger" parent="Table" instance=ExtResource( 3 )]
-position = Vector2( 766, 686 )
+position = Vector2( 765, 686 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 

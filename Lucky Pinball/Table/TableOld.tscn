@@ -2,12 +2,13 @@
 
 [ext_resource path="res://Background/IMG_20220716_205458.jpg" type="Texture" id=1]
 [ext_resource path="res://InteractiveObjects/Pinwheel.tscn" type="PackedScene" id=2]
-[ext_resource path="res://InteractiveObjects/Bumpers/RedBumper.tscn" type="PackedScene" id=3]
+[ext_resource path="res://InteractiveObjects/Bumpers/RedBumperBIG.tscn" type="PackedScene" id=3]
 [ext_resource path="res://InteractiveObjects/Slingshots/SlingshotRight.tscn" type="PackedScene" id=4]
 [ext_resource path="res://InteractiveObjects/Slingshots/SlingshotLeft.tscn" type="PackedScene" id=5]
 [ext_resource path="res://InteractiveObjects/Bumpers/RedPachinkoDots.tscn" type="PackedScene" id=7]
 [ext_resource path="res://InteractiveObjects/Bumpers/BluePachinkoDots.tscn" type="PackedScene" id=8]
 [ext_resource path="res://InteractiveObjects/Bumpers/BlueBumper.tscn" type="PackedScene" id=10]
+
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 249.353, 13.4696 )
