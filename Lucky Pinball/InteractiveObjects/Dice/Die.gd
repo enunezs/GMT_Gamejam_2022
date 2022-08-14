@@ -18,10 +18,10 @@ func add_score(_score):
 	score += _score
 	
 	
-	if score <= 0:
+	while score <= 0:
 		#Delete?
 		score = +1
-	elif score > 6:
+	while score > 6:
 		score -=1
 		
 	update_sprite()
