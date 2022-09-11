@@ -24,6 +24,7 @@ func _ready():
 	score = 0
 	cur_score = 0
 	dice_spawned =0
+	dice_on_fall_zone = 0
 	
 	rng.seed = hash("Ema")
 	#rng.state = 1 # Restore
