@@ -10,7 +10,7 @@ export var bumper_force = 100
 export var score_change = 0
 export var sprite_change = false
 export var animate = true
-export var sound = false
+export var sound = true
 #bounce_mode = "linear"
 
 # Called when the node enters the scene tree for the first time.

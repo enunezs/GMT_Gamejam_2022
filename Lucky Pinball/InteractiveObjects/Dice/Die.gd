@@ -12,8 +12,7 @@ func _ready():
 	
 func add_score(_score):
 	
-	if _score >0:
-		$AudioStreamPlayer2D.play()
+	$AudioStreamPlayer2D.play()
 	
 	score += _score
 	
